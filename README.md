@@ -11,6 +11,8 @@
   </div>
 </div>
 ~~~
+- th:field 가 자동으로 name, value 속성을 생성
+- hidden input을 생성해 아무것도 선택되지 않을 떄 FALSE값이 넘어가도록 도와줌
 
 
 ##### 2. multi checkbox
