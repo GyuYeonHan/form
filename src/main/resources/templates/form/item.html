@@ -55,7 +55,7 @@
         <div th:each="region : ${regions}" class="form-check form-check-inline">
             <input type="checkbox" th:field="${item.regions}" th:value="${region.key}" class="form-check-input" disabled>
             <label th:for="${#ids.prev('regions')}"
-                   th:text="${region.value}" class="form-check-label">지역</label>
+                   th:text="${region.value}" class="form-check-label"></label>
         </div>
     </div>
 
@@ -65,7 +65,6 @@
         <div th:each="type : ${itemTypes}" class="form-check form-check-inline">
             <input type="radio" th:field="${item.itemType}" th:value="${type.name()}" class="form-check-input" disabled>
             <label th:for="${#ids.prev('itemType')}" th:text="${type.description}" class="form-check-label">
-                종류
             </label>
         </div>
     </div>
@@ -76,7 +75,7 @@
         <select th:field="${item.deliveryCode}" class="form-select" disabled>
             <option value="">==배송 방식 선택==</option>
             <option th:each="deliveryCode : ${deliveryCodes}" th:value="${deliveryCode.code}"
-                    th:text="${deliveryCode.displayName}">FAST</option>
+                    th:text="${deliveryCode.displayName}"></option>
         </select>
     </div>
 
